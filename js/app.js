@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
             }
     
              else if(count === 1){
-                if(e.target.classList.contains('closedbox') && !popupEmpty?.classList.contains('hidden') && popupAccept?.classList.contains('hidden')  ){
+                if(e.target.classList.contains('closedbox') && popupEmpty?.classList.contains('hidden') && popupAccept?.classList.contains('hidden') ){
                     e.target.classList.add('hidden')
                     e.target.nextElementSibling.classList.remove('hidden')
                     setTimeout(()=>{popupAccept.classList.remove('hidden')}, 1000)
@@ -57,4 +57,27 @@ document.addEventListener('DOMContentLoaded', (e) => {
             popupAccept.classList.add('hidden')
         }
     })
+
+
+     const offerTime= document.querySelector('.offer__timer')
+
+     let time = 600
+    
+    setInterval(timer, 1000)
+
+    function timer (){
+        const minutes = Math.floor(time /60);
+        let seconds = time % 60;
+        if (seconds<0){
+            offerTime.innerHTML = `00 : 00`
+        } else{
+        seconds = seconds < 10 ? '0' + seconds: seconds;
+        offerTime.innerHTML = `${minutes} : ${seconds}`;
+        time--
+        }
+       
+       
+    }
+     
+    
 })

@@ -197,17 +197,17 @@ transition: opacity 1s ease 0s;
     cursor: pointer;
 }
 .offer{
-    padding: 10px;
+    
     width: 465px;
     height: 813px;
-    border: 2px gray dashed;
+   
     border-radius: 6px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
-    height: 0;
+    height: 0px;
     overflow: hidden;
     
 }
@@ -223,7 +223,12 @@ transition: opacity 1s ease 0s;
 .offer__text-main{
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+}
+.offer__timer{
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
 }
 .form{
     display: flex;
@@ -266,4 +271,6 @@ transition: opacity 1s ease 0s;
     height: 900px;
     overflow: visible;
     transition: all 0.4s linear;
+    border: 2px gray dashed;
+    padding: 10px;
 }
