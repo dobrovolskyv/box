@@ -1,15 +1,13 @@
 document.addEventListener('DOMContentLoaded', (e) => {
     e.preventDefault();
-    const closedBox = document.querySelector('.closedbox')
+  
     const content = document.querySelector('.content')
-    const popup__empty = document.querySelector('.popup__empty')
-    const popup__accept = document.querySelector('.popup__accept')
+    const popupEmpty = document.querySelector('.popup__empty')
+    const popupAccept = document.querySelector('.popup__accept')
     const offer = document.querySelector('.offer')
-    const offer_btn = document.querySelector('.btn__empty')
-    const popup__accept_btn = document.querySelector('.btn__accept')
-    const accept__close = document.querySelector('.accept__close')
-    // const cards = document.querySelectorAll('.contentbox');
-    const openedBox = document.querySelector('.openedbox');
+    const offerBtn = document.querySelector('.btn__empty')
+    const popupAcceptBtn = document.querySelector('.btn__accept')
+    const acceptClose = document.querySelector('.accept__close')
     const salePrice = document.querySelector('.contentbox__sale')
 
     let count = 0
@@ -21,19 +19,19 @@ document.addEventListener('DOMContentLoaded', (e) => {
                 if(e.target.classList.contains('closedbox') && !e.target.classList.contains('hidden') && e.target.nextElementSibling.classList.contains('hidden')){
                     e.target.classList.add('hidden')
                     e.target.previousElementSibling.classList.remove('hidden')
-                    setTimeout(()=>{popup__empty.classList.remove('hidden')},1000)
+                    setTimeout(()=>{popupEmpty.classList.remove('hidden')},1000)
                     
                     count++
                 }
             }
     
              else if(count === 1){
-                if(e.target.classList.contains('closedbox') && popup__accept?.classList.contains('hidden') && salePrice.classList.contains('hidden')){
+                if(e.target.classList.contains('closedbox') && !popupEmpty?.classList.contains('hidden') && popupAccept?.classList.contains('hidden')  ){
                     e.target.classList.add('hidden')
                     e.target.nextElementSibling.classList.remove('hidden')
-                    setTimeout(()=>{popup__accept.classList.remove('hidden')}, 1000)
+                    setTimeout(()=>{popupAccept.classList.remove('hidden')}, 1000)
                     setTimeout(()=>{
-                    offer.classList.add('hidden');
+                    offer.classList.add('show');
                     content.classList.add('hidden');
                     },2000)
                     count++
@@ -43,20 +41,20 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
     })
 
-    //проверки на события, если 
-    offer_btn?.addEventListener('click',(e)=>{
-        if(!popup__empty?.classList.contains('hidden')){
-            popup__empty.classList.add('hidden')
+    //проверки на события, если у поапа нет класса hidden, то по нажатию на кнопку добавляем его
+    offerBtn?.addEventListener('click',(e)=>{
+        if(!popupEmpty?.classList.contains('hidden')){
+            popupEmpty.classList.add('hidden')
         }
     })
-    popup__accept_btn?.addEventListener('click',(e)=>{
-        if(!popup__accept?.classList.contains('hidden')){
-            popup__accept.classList.add('hidden')
+    popupAcceptBtn?.addEventListener('click',(e)=>{
+        if(!popupAccept?.classList.contains('hidden')){
+            popupAccept.classList.add('hidden')
         }
     })
-    accept__close?.addEventListener('click',(e)=>{
-        if(!popup__accept?.classList.contains('hidden')){
-            popup__accept.classList.add('hidden')
+    acceptClose?.addEventListener('click',(e)=>{
+        if(!popupAccept?.classList.contains('hidden')){
+            popupAccept.classList.add('hidden')
         }
     })
 })
