@@ -28,9 +28,11 @@ body{
 }
 .contentbox{
     position: relative;
+    
 }
 .contentbox img{
     position: absolute;
+    cursor: pointer;
 }
 .contentbox__sale{
     font-size: 40px;
@@ -98,7 +100,7 @@ h3{
     background-color: rgb(237, 66, 66);
     font-size: 18px;
     color: white;
-
+    cursor: pointer;
 }
 
 .popup__accept{
@@ -114,6 +116,7 @@ h3{
     position: absolute;
     top: 40%;
     transform: translate(50%,-50%);
+    cursor: pointer;
 }
 .accept__close{
     width: 30px;
@@ -126,6 +129,7 @@ h3{
     position: absolute;
     top: -40px;
     right: -40px;
+    cursor: pointer;
 }
 
 .accept__cyrcle{
@@ -138,7 +142,7 @@ h3{
     margin: 0 auto;
     background-color: rgb(113, 195, 65);
     border-radius: 50%;
-
+cursor: pointer;
 }
 .accept__cyrcle::after{
     content: "";
@@ -190,6 +194,7 @@ transition: opacity 1s ease 0s;
     background-color: rgb(113, 195, 65);
     font-size: 18px;
     color: white;
+    cursor: pointer;
 }
 .offer{
     padding: 10px;
@@ -202,6 +207,9 @@ transition: opacity 1s ease 0s;
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
+    height: 0;
+    overflow: hidden;
+    
 }
 .offer__img{
     width: 100%;
@@ -255,5 +263,7 @@ transition: opacity 1s ease 0s;
     display: none;
 }
 .show{
-    display: blox;
+    height: 900px;
+    overflow: visible;
+    transition: all 0.4s linear;
 }
