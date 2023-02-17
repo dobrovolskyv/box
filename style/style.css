@@ -122,7 +122,8 @@ h3{
     position: relative;
     border-radius: 6px; 
     position: absolute;
-    top: 40%;
+    top: 36%;
+    left: 21%;
     transform: translate(50%,-50%);
     cursor: pointer;
 }
