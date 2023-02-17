@@ -21,8 +21,7 @@ body{
 .container{
     max-width: 900px;
     margin: 0 auto;
-    position: relative;
-    overflow: hidden;
+   
 }
 .content{
     max-width: 100%;
@@ -77,7 +76,7 @@ h3{
     align-items: center;
     border-radius: 6px;
     position: absolute;
-    top: 40%;
+    top: 45%;
     transform: translate(50%,-50%);
 
 }
@@ -127,7 +126,7 @@ h3{
     background-color: #fff;
     border-radius: 6px; 
     position: absolute;
-    top: 36%;
+    top: 45%;
     transform: translate(50%,-50%);
     cursor: pointer;
     z-index: 2;
@@ -156,7 +155,7 @@ h3{
     margin: 0 auto;
     background-color: rgb(113, 195, 65);
     border-radius: 50%;
-cursor: pointer;
+    cursor: pointer;
 }
 .accept__cyrcle::after{
     content: "";

@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
     const offerBtn = document.querySelector('.btn__empty')
     const popupAcceptBtn = document.querySelector('.btn__accept')
     const acceptClose = document.querySelector('.accept__close')
-    const salePrice = document.querySelector('.contentbox__sale')
 
     let count = 0
     content?.addEventListener('click',(e)=>{
