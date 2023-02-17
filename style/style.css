@@ -21,6 +21,7 @@ body{
 .container{
     max-width: 900px;
     margin: 0 auto;
+    position: relative;
 }
 .content{
     display: grid;
@@ -37,6 +38,7 @@ body{
     cursor: pointer;
     transform: scale(1);
     transition: all 0.3s linear;
+    width: 80%;
     
 }
 .contentbox img:hover{
@@ -73,7 +75,7 @@ h3{
     border-radius: 6px;
     position: absolute;
     top: 40%;
-    transform: translate(43%,-50%);
+    transform: translate(50%,-50%);
 
 }
 
