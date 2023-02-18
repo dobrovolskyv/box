@@ -127,7 +127,7 @@ h3{
     border-radius: 6px; 
     position: absolute;
     top: 45%;
-    transform: translate(50%,-50%);
+    transform: translate(60%,-50%);
     cursor: pointer;
     z-index: 2;
 }
@@ -298,8 +298,8 @@ transition: opacity 1s ease 0s;
         height: 268px;
         border-radius: 6px;
         position: absolute;
-        top: 50%;
-        transform: translate(40%,-50%);
+        top: 44.5%;
+        transform: translate(45%,-50%);
     
     }
     .empty__cyrcle{
@@ -367,7 +367,7 @@ transition: opacity 1s ease 0s;
         height: 268px;
         border-radius: 6px;
         top: 44%;
-        transform: translate(17%,-70%);
+        transform: translate(12%,-70%);
     
     }
     .popup__accept{
